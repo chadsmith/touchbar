@@ -1,49 +1,50 @@
 {
   "elements": [{
-      "name": "my-new-label",
-      "type": "label",
-      "label": "my 🔥 label",
-      "color": "#FF9300"
+      "name": "new-tab",
+      "type": "button",
+      "label": "➕",
+      "command": "application:new-file",
+      "color": "#949494",
+      "visible": "true"
     },
     {
-      "name": "spacer",
-      "type": "spacer",
-      "size": "small"
+      "name": "save",
+      "type": "button",
+      "label": "💾",
+      "command": "core:save",
+      "color": "#747474"
     },
     {
       "name": "comment-button",
       "type": "button",
       "label": "//",
       "command": "editor:toggle-line-comments",
-      "color": "#5712d6"
-    },
-    {
-      "name": "beautify-button",
-      "type": "button",
-      "label": "💅",
-      "command": "atom-beautify:beautify-editor",
-      "color": "#83FF8F"
-    },
-    {
-      "name": "color-picker",
-      "type": "color-picker"
+      "color": "#545454"
     },
     {
       "type": "popover",
-      "label": "😄",
+      "label": "…",
       "elements": [{
-          "name": "emoji-scrubber",
-          "type": "scrubber",
-          "label": "😄",
-          "items": "emojis"
+          "name": "add-project-folder",
+          "type": "button",
+          "label": "🗂",
+          "command": "application:add-project-folder",
+          "visible": "true"
+        },
+        {
+          "name": "beautify-button",
+          "type": "button",
+          "label": "💄",
+          "command": "atom-beautify:beautify-editor"
+        },
+        {
+          "name": "toggle-command-palette",
+          "type": "button",
+          "label": "🎨",
+          "command": "command-palette:toggle",
+          "visible": "true"
         }
       ]
-    },
-    {
-      "name": "toggle-command-palette",
-      "type": "button",
-      "label": "🎨",
-      "command": "command-palette:toggle"
     }
   ]
 }
