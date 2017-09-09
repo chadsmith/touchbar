@@ -4,36 +4,59 @@
       "type": "button",
       "label": "➕",
       "command": "application:new-file",
-      "color": "#949494",
-      "visible": "true"
+      "color": "#949494"
     },
     {
       "name": "save",
-      "type": "button",
+      "type": "editor-button",
       "label": "💾",
       "command": "core:save",
-      "color": "#747474"
+      "color": "#949494"
+    },
+    {
+      "type": "project-bar",
+      "label": "📁",
+      "elements": [{
+          "name": "add-project-folder",
+          "type": "button",
+          "label": "➕",
+          "command": "application:add-project-folder",
+          "color": "#949494"
+        },
+        {
+          "type": "project-folder",
+          "label": "api",
+          "path": "/Users/chadsmith/scout/api"
+        },
+        {
+          "type": "project-folder",
+          "label": "react native app",
+          "path": "/Users/chadsmith/scout/mobile"
+        },
+        {
+          "type": "project-folder",
+          "label": "react app",
+          "path": "/Users/chadsmith/scout/web"
+        },
+        {
+          "type": "project-folder",
+          "label": "cs app",
+          "path": "/Users/chadsmith/scout/cs"
+        }
+      ]
     },
     {
       "name": "comment-button",
-      "type": "button",
+      "type": "editor-button",
       "label": "//",
-      "command": "editor:toggle-line-comments",
-      "color": "#545454"
+      "command": "editor:toggle-line-comments"
     },
     {
       "type": "popover",
       "label": "…",
       "elements": [{
-          "name": "add-project-folder",
-          "type": "button",
-          "label": "🗂",
-          "command": "application:add-project-folder",
-          "visible": "true"
-        },
-        {
           "name": "beautify-button",
-          "type": "button",
+          "type": "editor-button",
           "label": "💄",
           "command": "atom-beautify:beautify-editor"
         },
@@ -41,8 +64,7 @@
           "name": "toggle-command-palette",
           "type": "button",
           "label": "🎨",
-          "command": "command-palette:toggle",
-          "visible": "true"
+          "command": "command-palette:toggle"
         }
       ]
     }

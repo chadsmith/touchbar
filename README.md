@@ -3,7 +3,7 @@
 Add touchbar elements to atom
 
 ## Installation
-`apm install touchbar`
+`apm install git@github.com:chadsmith/touchbar.git`
 
 ## How to use
 Touchbar will be loaded on startup.
@@ -15,6 +15,8 @@ Press `ctrl-alt-o` to toggle touchbar
 - Color picker
 - Emoji Picker
 - Toggle Command Palette
+- Quickly load frequently used projects
+- Hide buttons when not editing
 
 ![touchbar screenshot](touch_screenshot.png)
 
@@ -25,7 +27,7 @@ Experimental emoji bar
 - Change items in `lib/config.json`
 
 ## TODO:
-- [ ] move all settings to seperate window [touchbar-edit-view.js](lib/touchbar-edit-view.js)
+- [ ] move all settings to separate window [touchbar-edit-view.js](lib/touchbar-edit-view.js)
   - Add elements
   - Change commands (label, command, color)
   - Different Profiles
